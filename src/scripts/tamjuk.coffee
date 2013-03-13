@@ -1,5 +1,5 @@
 # Description:
-#   Say soccer everytime Tamjuk is said
+#   Say Tamjuk: u mad? everytime Tamjuk is said
 #
 # Dependencies:
 #   None
@@ -14,5 +14,5 @@
 #   @Robbie
 
 module.exports = (robot) ->
-  robot.respond /Tamjuk/i, (msg) ->
-      msg.reply "Tamjuk u mad"
+  robot.hear /Tamjuk/i, (msg)->
+    msg.send "Tamjuk: u mad?"

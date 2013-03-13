@@ -1,5 +1,5 @@
 # Description:
-#   Say soccer everytime football is said
+#   Say I think you meant soccer? everytime Football is said
 #
 # Dependencies:
 #   None
@@ -14,5 +14,5 @@
 #   @Robbie
 
 module.exports = (robot) ->
-  robot.respond /football/i, (msg) ->
-      msg.reply "I think you mean soccer?"
+  robot.hear /football/i, (msg)->
+    msg.send "I think you meant soccer?"
